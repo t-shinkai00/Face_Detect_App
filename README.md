@@ -4,11 +4,11 @@
 
 ## 準備
 
-- pip install -r requirements.txt
+- `pip install -r requirements.txt`
 
 ### pandas のインストール
 
-- pip install pandas
+- `pip install pandas`
 
 ### M1 Mac などで pandas のインストールに失敗した場合
 
