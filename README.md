@@ -12,6 +12,6 @@
 
 ### M1 Mac などで pandas のインストールに失敗した場合
 
-- git clone https://github.com/pandas-dev/pandas.git
-- cd pandas
-- python3 setup.py install
+- `git clone https://github.com/pandas-dev/pandas.git`
+- `cd pandas`
+- `python3 setup.py install --record files.txt`
