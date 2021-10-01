@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from Face_API import detect_face
 
 st.title("顔認識アプリ")
 
