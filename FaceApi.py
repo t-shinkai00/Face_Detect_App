@@ -37,6 +37,9 @@ results=res.json()
 for result in results:
   rect=result["faceRectangle"]
   # print(rect)
+  age=result["faceAttributes"]["age"]
+  gender=result["faceAttributes"]["gender"]
+  # print(age,gender)
 
   draw=ImageDraw.Draw(img)
   # draw.line([(0,50),(200,50),(0,150),(200,150)],fill="red",width=5)
