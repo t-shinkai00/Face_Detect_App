@@ -46,4 +46,5 @@ for result in results:
   # img.show()
 
   draw.rectangle([(rect["left"], rect["top"]), (rect["left"]+rect["width"], rect["top"]+rect["height"])])
+  draw.text((rect["left"],rect["top"]-10),f"{gender}, {age}", fill="red")
 img.show()
