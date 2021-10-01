@@ -29,3 +29,9 @@ params={
 }
 res=requests.post(face_api_url, params=params, headers=headers, data=binary_img)
 # print(res)
+
+
+result=res.json()
+# print(result)
+rect=result[0]["faceRectangle"]
+# print(rect)
