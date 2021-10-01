@@ -11,3 +11,6 @@ endpoint=secret_json["ENDPOINT"]
 assert subscription_key
 face_api_url=endpoint+"face/v1.0/detect"
 # print(face_api_url)
+
+img=Image.open("images/Roland.jpg")
+img.show()
