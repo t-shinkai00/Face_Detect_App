@@ -13,10 +13,11 @@ assert subscription_key
 face_api_url=endpoint+"face/v1.0/detect"
 # print(face_api_url)
 
-img=Image.open("images/Jack-U.jpg")
+img_path="images/steve-aoki_bts.jpg"
+img=Image.open(img_path)
 # img.show()
 
-with open("images/Jack-U.jpg","rb") as f:
+with open(img_path,"rb") as f:
   binary_img=f.read()
 # print(binary_img)
 
