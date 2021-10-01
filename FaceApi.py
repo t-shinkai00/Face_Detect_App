@@ -14,3 +14,7 @@ face_api_url=endpoint+"face/v1.0/detect"
 
 img=Image.open("images/Jack-U.jpg")
 # img.show()
+
+with open("images/Jack-U.jpg","rb") as f:
+  binary_img=f.read()
+# print(binary_img)
