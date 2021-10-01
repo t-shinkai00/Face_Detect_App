@@ -1,5 +1,6 @@
 import requests
 from PIL import Image
+from PIL import ImageDraw
 import json
 
 with open("secret.json") as f:
@@ -35,8 +36,6 @@ result=res.json()
 # print(result)
 rect=result[0]["faceRectangle"]
 # print(rect)
-
-from PIL import ImageDraw
 
 draw=ImageDraw.Draw(img)
 # draw.line([(0,50),(200,50),(0,150),(200,150)],fill="red",width=5)
