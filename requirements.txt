@@ -41,6 +41,7 @@ nest-asyncio==1.5.1
 notebook==6.4.4
 numpy==1.21.2
 packaging==21.0
+pandas==1.4.0.dev0+795.g4e1f51cc1c
 pandocfilters==1.5.0
 parso==0.8.2
 pexpect==4.8.0
@@ -74,6 +75,7 @@ typing-extensions==3.10.0.2
 tzlocal==3.0
 urllib3==1.26.7
 validators==0.18.2
+watchdog==2.1.5
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.1
