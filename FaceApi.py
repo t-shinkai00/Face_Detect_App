@@ -18,3 +18,14 @@ img=Image.open("images/Jack-U.jpg")
 with open("images/Jack-U.jpg","rb") as f:
   binary_img=f.read()
 # print(binary_img)
+
+headers={
+  "Content-Type":"application/octet-stream",
+  "Ocp-Apim-Subscription-Key":subscription_key
+  }
+params={
+  "returnFaceId":"true",
+  "returnFaceAttributes":"age, gender, headPose, smile, facialHair, glasses, emotion, hair, makeup, occlusion, accessories, blur, exposure, noise",
+}
+res=requests.post(face_api_url, params=params, headers=headers, data=binary_img)
+# print(res)
