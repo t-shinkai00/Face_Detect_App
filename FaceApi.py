@@ -3,7 +3,7 @@ from PIL import Image
 import json
 
 with open("secret.json") as f:
-    secret_json=json.load(f)
+  secret_json=json.load(f)
 subscription_key=secret_json["SUBSCRIPTION_KEY"]
 endpoint=secret_json["ENDPOINT"]
 
