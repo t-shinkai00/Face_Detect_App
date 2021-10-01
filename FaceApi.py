@@ -2,6 +2,7 @@ import requests
 from PIL import Image
 from PIL import ImageDraw
 import json
+import io
 
 with open("secret.json") as f:
   secret_json=json.load(f)
@@ -13,13 +14,17 @@ assert subscription_key
 face_api_url=endpoint+"face/v1.0/detect"
 # print(face_api_url)
 
-img_path="images/steve-aoki_bts.jpg"
-img=Image.open(img_path)
-# img.show()
+with io.BytesIO() as output:
+  img.save(output,format="JPEG")
+  binary_img=output.getvalue()  # 画像のバイナリ取得
 
-with open(img_path,"rb") as f:
-  binary_img=f.read()
-# print(binary_img)
+# img_path="images/steve-aoki_bts.jpg"
+# img=Image.open(img_path)
+# # img.show()
+
+# with open(img_path,"rb") as f:
+#   binary_img=f.read()
+# # print(binary_img)
 
 headers={
   "Content-Type":"application/octet-stream",
