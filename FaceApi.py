@@ -13,4 +13,4 @@ face_api_url=endpoint+"face/v1.0/detect"
 # print(face_api_url)
 
 img=Image.open("images/Jack-U.jpg")
-img.show()
+# img.show()
