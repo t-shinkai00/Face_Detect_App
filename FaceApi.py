@@ -41,5 +41,5 @@ draw=ImageDraw.Draw(img)
 # draw.line([(0,50),(200,50),(0,150),(200,150)],fill="red",width=5)
 # img.show()
 
-draw.rectangle([(rect["left"],rect["top"]),(rect["left"]+rect["width"],rect["top"]+rect["height"])])
+draw.rectangle([(rect["left"], rect["top"]), (rect["left"]+rect["width"], rect["top"]+rect["height"])])
 img.show()
