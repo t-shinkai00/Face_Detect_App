@@ -19,3 +19,4 @@
 ## 実行
 
 - `streamlit run main.py`
+  > Mac 以外の環境の場合、FaceApi.py の font_path を各自の環境に合わせて調整してから実行してください。
