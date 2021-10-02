@@ -1,10 +1,8 @@
 import requests
-from PIL import Image
-from PIL import ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 import json
 import io
 
-def detect_face():
 with open("secret.json") as f:
   secret_json=json.load(f)
 subscription_key=secret_json["SUBSCRIPTION_KEY"]
@@ -15,6 +13,7 @@ assert subscription_key
 face_api_url=endpoint+"face/v1.0/detect"
 # print(face_api_url)
 
+def detect_face():
   with io.BytesIO() as output:
     img.save(output,format="JPEG")
     binary_img=output.getvalue()  # 画像のバイナリ取得
@@ -47,11 +46,17 @@ face_api_url=endpoint+"face/v1.0/detect"
     age=result["faceAttributes"]["age"]
     gender=result["faceAttributes"]["gender"]
     # print(age,gender)
+    font_size=16
+    font_path="~/Library/Fonts/ProFont Bold For Powerline.ttf"
+    font = ImageFont.truetype(font_path,font_size)
 
     draw=ImageDraw.Draw(img)
     # draw.line([(0,50),(200,50),(0,150),(200,150)],fill="red",width=5)
     # img.show()
 
     draw.rectangle([(rect["left"], rect["top"]), (rect["left"]+rect["width"], rect["top"]+rect["height"])])
-    draw.text((rect["left"],rect["top"]-10),f"{gender}, {age}", fill="red")
+    if gender=="male":
+      draw.text((rect["left"], rect["top"]-font_size),f"{gender}, {age}", fill="blue", font=font)
+    else:
+      draw.text((rect["left"], rect["top"]-font_size),f"{gender}, {age}", fill="red", font=font)
   return img
