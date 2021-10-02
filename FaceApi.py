@@ -13,7 +13,7 @@ assert subscription_key
 face_api_url=endpoint+"face/v1.0/detect"
 # print(face_api_url)
 
-def detect_face():
+def detect_face(img):
   with io.BytesIO() as output:
     img.save(output,format="JPEG")
     binary_img=output.getvalue()  # 画像のバイナリ取得
