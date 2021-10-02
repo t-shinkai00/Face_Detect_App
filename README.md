@@ -15,3 +15,7 @@
 - `git clone https://github.com/pandas-dev/pandas.git`
 - `cd pandas`
 - `python3 setup.py install --record files.txt`
+
+## 実行
+
+- `streamlit run main.py`
