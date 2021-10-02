@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 from FaceApi import detect_face
-st.title("顔認識アプリ")
+st.title("顔検出アプリ")
 
 uploaded_file=st.file_uploader("Choose an image...", type="jpg")
 
