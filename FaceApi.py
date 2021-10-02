@@ -5,15 +5,15 @@ import json
 import io
 
 def detect_face():
-  with open("secret.json") as f:
-    secret_json=json.load(f)
-  subscription_key=secret_json["SUBSCRIPTION_KEY"]
-  endpoint=secret_json["ENDPOINT"]
+with open("secret.json") as f:
+  secret_json=json.load(f)
+subscription_key=secret_json["SUBSCRIPTION_KEY"]
+endpoint=secret_json["ENDPOINT"]
 
-  # print(subscription_key)
-  assert subscription_key
-  face_api_url=endpoint+"face/v1.0/detect"
-  # print(face_api_url)
+# print(subscription_key)
+assert subscription_key
+face_api_url=endpoint+"face/v1.0/detect"
+# print(face_api_url)
 
   with io.BytesIO() as output:
     img.save(output,format="JPEG")
