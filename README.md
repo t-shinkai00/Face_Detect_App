@@ -10,7 +10,7 @@
 
 - `pip install -r requirements.txt`
 
-### M1 チップ搭載 Mac を使用している場合
+### M1 チップ搭載 Mac を使用していて Pandas のインストールに失敗した場合
 
 - `git clone https://github.com/pandas-dev/pandas.git`
 - `cd pandas`
