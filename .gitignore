@@ -1,2 +1,5 @@
 # キャッシュ
 __pycache__/
+
+# Pandas
+pandas/
