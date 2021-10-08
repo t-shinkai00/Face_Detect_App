@@ -1,20 +1,16 @@
 # Face_Detect_App
 
-- [参考](https://www.youtube.com/watch?v=zpBjbK6jic0&list=WL&index=12&t=232s)
+- [デプロイ先](https://share.streamlit.io/t-shinkai00/face_detect_app/main/main.py)
 
-## 準備
+## 実行準備
+
+### 自分の環境にモジュール類をインストールする場合
 
 - `pip install -r requirements.txt`
 
-### pandas のインストール
+### venv 環境を用いる場合
 
-- `pip install pandas`
-
-### M1 Mac などで pandas のインストールに失敗した場合
-
-- `git clone https://github.com/pandas-dev/pandas.git`
-- `cd pandas`
-- `python3 setup.py install --record files.txt`
+- `source .face-detect-app/bin/activate`
 
 ## 実行
 
