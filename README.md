@@ -4,7 +4,7 @@
 - 顔検出されれば顔のある領域が白色の長方形で囲まれる。
 - また長方形の上に性別、推定年齢が示される。
 - [実際に試す](https://share.streamlit.io/t-shinkai00/face_detect_app/main/main.py)
-  ![](images/scrnli_10_8_2021_5-46-00%20PM.png)
+  ![](images/scrnli_10_9_2021_2-41-57%20AM.png)
 
 ## 実行準備
 
