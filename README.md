@@ -1,8 +1,10 @@
 # Face_Detect_App
 
-![](images/scrnli_10_8_2021_5-46-00%20PM.png)
-
+- アップロードした画像に対して顔検出を行う。
+- 顔検出されれば顔のある領域が白色の長方形で囲まれる。
+- また長方形の上に性別、推定年齢が示される。
 - [実際に試す](https://share.streamlit.io/t-shinkai00/face_detect_app/main/main.py)
+  ![](images/scrnli_10_8_2021_5-46-00%20PM.png)
 
 ## 実行準備
 
@@ -24,4 +26,4 @@
 
 - [Microsoft](https://azure.microsoft.com/ja-jp/services/cognitive-services/face/#overview)アカウントを作成・ログインして、Face API を始める。
 - secret.json ファイルを作成して SUBSCRIPTION_KEY と ENDPOINT を JSON 形式で記載する。
-- `streamlit run main.py`を実行
+- `streamlit run main.py`を実行。
