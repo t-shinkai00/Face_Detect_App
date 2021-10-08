@@ -47,7 +47,7 @@ def detect_face(img):
     gender=result["faceAttributes"]["gender"]
     # print(age,gender)
     font_size=16
-    font_path="~/Library/Fonts/ProFont Bold For Powerline.ttf"
+    font_path="./ProFont Bold For Powerline.ttf"
     font = ImageFont.truetype(font_path,font_size)
 
     draw=ImageDraw.Draw(img)
