@@ -1,5 +1,6 @@
 # キャッシュ
 __pycache__/
+*.pyc
 
 # Pandas
 pandas/
