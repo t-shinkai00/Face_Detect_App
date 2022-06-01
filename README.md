@@ -18,10 +18,6 @@
 - `cd pandas`
 - `python setup.py install --record files.txt`
 
-### venv 環境を用いる場合
-
-- `source .face-detect-app/bin/activate`
-
 ## 実行
 
 - [Microsoft](https://azure.microsoft.com/ja-jp/services/cognitive-services/face/#overview)アカウントを作成・ログインして、Face API を始める。
