@@ -2,5 +2,5 @@
 __pycache__/
 *.pyc
 
-# Pandas
-pandas/
+# venv
+.venv/
